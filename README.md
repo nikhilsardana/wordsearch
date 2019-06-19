@@ -72,7 +72,7 @@ Then, skip to step 12.
 
 ### All Inputs
 12. Verify `formatted.txt` is correct. If this deviates from your true word search, this program is not guaranteed to be correct. Alternatively, don't verify `formatted.txt` matches your word search, hope it's correct, and blindly trust Google Cloud Vision.
-13. This program will only find words in the word search that are also contained in the English Dictionary. Any additional words you want found should be added to ``addendum.txt`.
+13. This program will only find words in the word search that are also contained in the English Dictionary. Any additional words you want found should be added to `addendum.txt`.
 14. Run `python3 wordsearch.py`. There are a few flags available:
 --* `--min`: sets the minimum number of characters for words you want to find. Defaults to 4. 
 --* `--max`: sets the maximum number of characters for words you want to find. Defaults to the maximum side length of the word search.
