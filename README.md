@@ -9,8 +9,7 @@ wordsearch
  A simple wordsearch solver.
 </h3>
 
-### Caveats
-Only works on rectangular inputs and English word searches. Modifications necessary to work with UTF-8 text.
+*Caveats*: Only works on rectangular inputs and English word searches. Modifications necessary to work with UTF-8 text.
 
 # How to use it:
 0. Clone the repository.
