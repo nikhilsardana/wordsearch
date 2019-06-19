@@ -93,6 +93,9 @@ As mentioned above, `python3 wordsearch.py` will find all possible dictionary wo
 
 ![Example Output](output.png)
 
+# Errors
+If the output isn't what you expect, first check `formatted.txt` to make sure your input has been entered correctly. If your `formatted.txt` is correct but the algorithm isn't finding a word, verify the word falls between `--min` and `--max` and you are using the correct flags.
+
 # Other
 If you wish to build a better visualization scheme, note that the first 198 lines of `wordsearch.py` form a complete program which writes all found words to the text file `intermediate/found.txt`. Furthermore, every line in `intermediate/coord.txt` corresponds to the coordinates of the corresponding word in `found.txt`. Every `[x,y]` tuple corresponds to the position of a letter in a found word in the word search grid. If you wish to build a visualizer off this code, these two files provide complete information in a relatively easy-to-parse format.
 
