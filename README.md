@@ -62,7 +62,7 @@ then, copy your badly formatted text into `input.txt`.
 
 Then, skip to step 12.
 
-## Image Input
+### Image Input
 6. Unfortunately, none of the Python OCR libraries seemed to work correctly for this task. So, the alternative is as follows:
 7. Take a picture of your word search. Crop it so that it only includes the word search text, no borders, outlines, or any other stray marks.
 8. Consider running some image processing to clear up the text.
@@ -70,7 +70,7 @@ Then, skip to step 12.
 10. Click on the "Text" tab and copy over the OCR'd text into `input.txt`. Make sure to save this file with ANSI encoding (the script will need slight modifications to read in UTF-8 formatting).
 11. Run `python format.py charactersperrow` where `charactersperrow` is the number of characters per row of the true word search. This is assumed to be a positive constant, since this program only works on rectangular word searches.
 
-## All Inputs
+### All Inputs
 12. Verify `formatted.txt` is correct. If this deviates from your true word search, this program is not guaranteed to be correct. Alternatively, don't verify `formatted.txt` matches your word search, hope it's correct, and blindly trust Google Cloud Vision.
 13. This program will only find words in the word search that are also contained in the English Dictionary. Any additional words you want found should be added to ``addendum.txt`.
 14. Run `python3 wordsearch.py`. There are a few flags available:
@@ -84,6 +84,8 @@ As mentioned above, `python3 wordsearch.py` will find all possible dictionary wo
 
 ![Example Output](output.png)
 
+## Other
+If you wish to build a better visualization scheme, note that the first 198 lines of `wordsearch.py` form a complete program which writes all found words to the text file `intermediate/found.txt`. Furthermore, every line in `intermediate/coord.txt` corresponds to the coordinates of the corresponding word in `found.txt`. Every `[x,y]` tuple corresponds to the position of a letter in a found word in the word search grid. If you wish to build a visualizer off this code, these two files provide complete information in a relatively easy-to-parse format.
 
 ## Citations
 - `common.txt` from [github.com/first20hours](https://github.com/first20hours/google-10000-english).
