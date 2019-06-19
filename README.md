@@ -6,7 +6,7 @@
 wordsearch
 </h1>
 <h3 align='center'>
- A simple wordsearch solver.
+ A simple word search solver.
 </h3>
 
 *Caveats*: Only works on rectangular inputs and English word searches. Modifications necessary to work with UTF-8 text.
