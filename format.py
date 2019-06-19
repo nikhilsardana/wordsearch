@@ -1,5 +1,6 @@
 import sys
 import re
+import codecs
 
 args = len(sys.argv) - 1
 numchar = 0
