@@ -7,10 +7,10 @@ Only works on rectangular inputs and English word searches. Modifications necess
 ## How to use it:
 0. Clone the repository.
 1. Have Python3 and pip installed
-2. 'pip3 install -r requirements.txt'
+2. `pip3 install -r requirements.txt`
 
 ### Text Input
-3. If you have a wordsearch in text form, that is, some text that looks like
+3. If you have a word search in text form, that is, some text that looks like
 
 ```
 OTICFLOWERBUDSCBSYCN
@@ -35,7 +35,7 @@ VIVROBINUOAVTORSFFYU
 THGMGWULFRAGRANCEQZI
 ```
 
-then just copy and paste it to 'formatted.txt'. Then, skip to step 7.
+then just copy and paste it to 'formatted.txt'. Then, skip to step 12.
 
 4. If, instead, you have some badly formatted text, something like
 ```
@@ -59,20 +59,20 @@ UTHGMGWULFRAGRANCEQ Z I
 then, copy your badly formatted text into `input.txt`.
 5. Run `python3 format.py charactersperrow`, where `charactersperrow` is the number of characters per row of the true word search. This is assumed to be a positive constant, since this program only works on rectangular word searches.
 
-Then, skip to step 7.
+Then, skip to step 12.
 
 ## Image Input
 6. Unfortunately, none of the Python OCR libraries seemed to work correctly for this task. So, the alternative is as follows:
-6.1 Take a picture of your word search. Crop it so that it only includes the word search text, no borders, outlines, or any other stray marks.
-6.2 Consider running some image processing to clear up the text.
-6.3 Run the cropped word search image through the ("Try the API" demo)[https://cloud.google.com/vision/] on the Google Cloud Vision site.
-6.4 Click on the "Text" tab and copy over the OCR'd text into `input.txt`. Make sure to save this file with ANSI encoding (the script will need slight modifications to read in UTF-8 formatting).
-6.5 Run `python format.py charactersperrow` where `charactersperrow` is the number of characters per row of the true word search. This is assumed to be a positive constant, since this program only works on rectangular word searches.
+7. Take a picture of your word search. Crop it so that it only includes the word search text, no borders, outlines, or any other stray marks.
+8. Consider running some image processing to clear up the text.
+9. Run the cropped word search image through the ["Try the API" demo](https://cloud.google.com/vision/) on the Google Cloud Vision site.
+10. Click on the "Text" tab and copy over the OCR'd text into `input.txt`. Make sure to save this file with ANSI encoding (the script will need slight modifications to read in UTF-8 formatting).
+11. Run `python format.py charactersperrow` where `charactersperrow` is the number of characters per row of the true word search. This is assumed to be a positive constant, since this program only works on rectangular word searches.
 
 ## All Inputs
-7. Verify `formatted.txt` is correct. If this deviates from your true word search, this program is not guaranteed to be correct. Alternatively, don't verify `formatted.txt` matches your word search, hope it's correct, and blindly trust Google Cloud Vision.
-8. This program will only find words in the word search that are also contained in the English Dictionary. Any additional words you want found should be added to ``addendum.txt`.
-8. Run `python3 wordsearch.py`. There are a few flags available:
+12. Verify `formatted.txt` is correct. If this deviates from your true word search, this program is not guaranteed to be correct. Alternatively, don't verify `formatted.txt` matches your word search, hope it's correct, and blindly trust Google Cloud Vision.
+13. This program will only find words in the word search that are also contained in the English Dictionary. Any additional words you want found should be added to ``addendum.txt`.
+14. Run `python3 wordsearch.py`. There are a few flags available:
 --* `--min`: sets the minimum number of characters for words you want to find. Defaults to 4. 
 --* `--max`: sets the maximum number of characters for words you want to find. Defaults to the maximum side length of the word search.
 --* `--common`: Use a dictionary of the 10,000 most common English words instead of the full English dictionary.
@@ -85,6 +85,6 @@ As mentioned above, `python3 wordsearch.py` will find all possible dictionary wo
 
 
 ## Citations
-`common.txt` from (https://github.com/first20hours/google-10000-english)[https://github.com/first20hours/google-10000-english].
-`english.txt` from (http://www.gwicks.net/dictionaries.htm)[http://www.gwicks.net/dictionaries.htm].
-Example word search shown in `output.png` from (here)[https://www.wianc.org/nature-puzzles/2019/2/13/think-spring-word-search].
+`common.txt` from [github.com/first20hours](https://github.com/first20hours/google-10000-english).
+`english.txt` from [gwicks.net](http://www.gwicks.net/dictionaries.htm).
+Example word search shown in `output.png` from [here](https://www.wianc.org/nature-puzzles/2019/2/13/think-spring-word-search).
