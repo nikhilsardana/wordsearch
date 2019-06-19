@@ -6,8 +6,6 @@
   wordsearch
 </h1>
 
-<hr>
-
 <h3 align='center'>
  A simple wordsearch solver.
 <h3>
