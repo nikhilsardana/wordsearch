@@ -1,9 +1,16 @@
-# wordsearch
-A simple wordsearch solver.
-
 <p align="center"> 
 <img src="ws.png" width="30%">
 </p>
+
+<h1 align='center'>
+  wordsearch
+</h1>
+
+<hr>
+
+<h3 align='center'>
+ A simple wordsearch solver.
+<h3>
 
 ### Caveats
 Only works on rectangular inputs and English word searches. Modifications necessary to work with UTF-8 text.
