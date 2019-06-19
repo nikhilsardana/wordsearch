@@ -74,11 +74,12 @@ Then, skip to step 12.
 12. Verify `formatted.txt` is correct. If this deviates from your true word search, this program is not guaranteed to be correct. Alternatively, don't verify `formatted.txt` matches your word search, hope it's correct, and blindly trust Google Cloud Vision.
 13. This program will only find words in the word search that are also contained in the English Dictionary. Any additional words you want found should be added to `addendum.txt`.
 14. Run `python3 wordsearch.py`. There are a few flags available:
---* `--min`: sets the minimum number of characters for words you want to find. Defaults to 4. 
---* `--max`: sets the maximum number of characters for words you want to find. Defaults to the maximum side length of the word search.
---* `--common`: Use a dictionary of the 10,000 most common English words instead of the full English dictionary.
---* `--addonly`: Use the list of words in `addendum.txt` as the entire dictionary; ignore `english.txt` and `common.txt`.
---* `--useall`: After `wordsearch.py` finds all the possible words contained in the wordsearch, it will open a GUI and allow you to choose which ones you want highlighted visually. This flag tells the program that you want it to show all found words. This may be helpful when paired with `-addonly`, since you can use `--addonly --useall` after adding the word search's word bank to `addendum.txt` and eliminate all false positives.
+
+-  `--min`: sets the minimum number of characters for words you want to find. Defaults to 4. 
+-  `--max`: sets the maximum number of characters for words you want to find. Defaults to the maximum side length of the word search.
+-  `--common`: Use a dictionary of the 10,000 most common English words instead of the full English dictionary.
+-  `--addonly`: Use the list of words in `addendum.txt` as the entire dictionary; ignore `english.txt` and `common.txt`.
+-  `--useall`: After `wordsearch.py` finds all the possible words contained in the wordsearch, it will open a GUI and allow you to choose which ones you want highlighted visually. This flag tells the program that you want it to show all found words. This may be helpful when paired with `-addonly`, since you can use `--addonly --useall` after adding the word search's word bank to `addendum.txt` and eliminate all false positives.
 
 As mentioned above, `python3 wordsearch.py` will find all possible dictionary words of length between `--min` and `--max`, and will then open a GUI to allow you to select which ones you want highlighted. Then, it will output the wordsearch in `matplotlib` form, with the selected words highlighted in different colors.
 
