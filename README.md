@@ -1,10 +1,6 @@
 <p align="center"> 
-<img src="ws.png" width="30%">
+<img alt="wordsearch" src="ws.png" width="30%">
 </p>
-
-<h1 align='center'>
-  wordsearch
-</h1>
 
 <h3 align='center'>
  A simple wordsearch solver.
