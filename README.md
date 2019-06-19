@@ -35,7 +35,7 @@ VIVROBINUOAVTORSFFYU
 THGMGWULFRAGRANCEQZI
 ```
 
-then just copy and paste it to 'formatted.txt'. Then, skip to step 12.
+then just copy and paste it to `formatted.txt`. Then, skip to step 12.
 
 4. If, instead, you have some badly formatted text, something like
 ```
@@ -57,6 +57,7 @@ RJM SEZQRGLV   LOYPICAZ R
 UTHGMGWULFRAGRANCEQ Z I
 ```
 then, copy your badly formatted text into `input.txt`.
+
 5. Run `python3 format.py charactersperrow`, where `charactersperrow` is the number of characters per row of the true word search. This is assumed to be a positive constant, since this program only works on rectangular word searches.
 
 Then, skip to step 12.
@@ -81,10 +82,10 @@ Then, skip to step 12.
 
 As mentioned above, `python3 wordsearch.py` will find all possible dictionary words of length between `--min` and `--max`, and will then open a GUI to allow you to select which ones you want highlighted. Then, it will output the wordsearch in `matplotlib` form, with the selected words highlighted in different colors.
 
-![Example Output]("output.png")
+![Example Output](output.png)
 
 
 ## Citations
-`common.txt` from [github.com/first20hours](https://github.com/first20hours/google-10000-english).
-`english.txt` from [gwicks.net](http://www.gwicks.net/dictionaries.htm).
-Example word search shown in `output.png` from [here](https://www.wianc.org/nature-puzzles/2019/2/13/think-spring-word-search).
+- `common.txt` from [github.com/first20hours](https://github.com/first20hours/google-10000-english).
+- `english.txt` from [gwicks.net](http://www.gwicks.net/dictionaries.htm).
+- Example word search shown in `output.png` from [here](https://www.wianc.org/nature-puzzles/2019/2/13/think-spring-word-search).
