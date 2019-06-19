@@ -1,7 +1,9 @@
 # wordsearch
 A simple wordsearch solver.
 
-![Logo](ws.png)
+<p align="center"> 
+<img src="ws.png" width="30%">
+</p>
 
 ### Caveats
 Only works on rectangular inputs and English word searches. Modifications necessary to work with UTF-8 text.
