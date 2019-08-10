@@ -66,7 +66,7 @@ UTHGMGWULFRAGRANCEQ Z I
 ```
 then, copy your badly formatted text into `input.txt`.
 
-5. Run `python3 format.py charactersperrow`, where `charactersperrow` is the number of characters per row of the true word search. This is assumed to be a positive constant, since this program only works on rectangular word searches. This script will generate a `formatted.txt` file for your input.
+5. Run `python3 format.py charactersperrow`, where `charactersperrow` is the number of characters per row of the true word search. This is assumed to be a positive constant, since this program only works on rectangular word searches. `format.py` will generate a `formatted.txt` file for your input.
 
 Then, skip to step 12.
 
@@ -76,7 +76,7 @@ Then, skip to step 12.
 8. Consider running some image processing to clear up the text.
 9. Run the cropped word search image through the ["Try the API" demo](https://cloud.google.com/vision/) on the Google Cloud Vision site.
 10. Click on the "Text" tab and copy over the OCR'd text into `input.txt`. Make sure to save this file with ANSI encoding (the script will need slight modifications to read in UTF-8 formatting).
-11. Run `python format.py charactersperrow` where `charactersperrow` is the number of characters per row of the true word search. This is assumed to be a positive constant, since this program only works on rectangular word searches. This script will generate a `formatted.txt` file for your input.
+11. Run `python format.py charactersperrow` where `charactersperrow` is the number of characters per row of the true word search. This is assumed to be a positive constant, since this program only works on rectangular word searches. `format.py` will generate a `formatted.txt` file for your input.
 
 ## All Inputs
 12. Verify `formatted.txt` is correct. If this deviates from your true word search, this program is not guaranteed to be correct. Alternatively, don't verify `formatted.txt` matches your word search, hope it's correct, and blindly trust Google Cloud Vision.
