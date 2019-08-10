@@ -10,7 +10,7 @@ wordsearch
 </h3>
 
 *Caveats*: Only works on rectangular inputs and English word searches. Modifications necessary to work with UTF-8 text.
-*Future Work*: Integrate OCR into program instead of relying on external algorithm.
+*Future Work*: Integrate OCR into program instead of relying on an external tool.
 
 # How to use it:
 0. Clone the repository.
