@@ -134,6 +134,11 @@ with open("addendum.txt") as f:
 with open("formatted.txt") as f:
   letters = f.readlines()
 
+################################################
+# Create list of all possible wordsearch strings
+# of length between min and max, inclusive
+#################################################
+
 letters = [x.rstrip() for x in letters]
 letters = [x for x in letters if len(x)>0]
 grid = [list(x) for x in letters]
@@ -145,16 +150,11 @@ maxw = args.max
 numrows = len(grid)
 numcols = len(grid[0])
 
-################################################
-# Create list of all possible wordsearch strings
-# of length between min and max, inclusive
-#################################################
 fb, coordfb = getwords(grid, minw, maxw, numrows, numcols)
 ud, coordud = getwords(gridT, minw, maxw, numcols, numrows)
 di, coorddi = diagwords(grid, minw, maxw, numrows, numcols)
 
 #Flip coordinates because of transposed grid
-#After flip, max = 20 19
 for x in coordud:
     for k in range(len(x)):
         tmp0 = x[k][0] 
